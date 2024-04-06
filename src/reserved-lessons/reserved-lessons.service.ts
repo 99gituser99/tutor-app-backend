@@ -1,9 +1,7 @@
 const crypto = require('crypto');
 const path = require('path');
 const fs = require('fs').promises;
-import { google } from 'googleapis';
 import { InjectRepository } from '@nestjs/typeorm';
-import { authenticate } from '@google-cloud/local-auth';
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { Equal, FindOptionsWhereProperty, ILike, Repository } from 'typeorm';
 
